@@ -29,5 +29,6 @@ View your app in AI Studio: https://ai.studio/apps/drive/1w3orBhEDdFJMTqnUVQL1mp
 4. In **Site settings → Build & deploy → Environment**, add:
    - `GEMINI_API_KEY` = your Gemini API key
 5. Trigger a deploy. Netlify will build and serve the `dist` folder.
+6. If you update `GEMINI_API_KEY`, redeploy so the new value is baked into the build.
 
-> Note: This repo includes a `netlify.toml` with an SPA redirect so client-side routing works.
+> Note: This repo includes a `netlify.toml` with an SPA redirect so client-side routing works on direct refreshes.
